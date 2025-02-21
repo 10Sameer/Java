@@ -1,7 +1,5 @@
 //swap a number 
-package np.edu.scst.lab1;
-
-public class swapNumber {
+public class swapNumber{
 
     public static void main(String[] args) {
         int x = 10;

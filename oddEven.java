@@ -1,4 +1,5 @@
-//code for odd even
+
+// Program to check whether a number is odd or even.
 public class oddEven {
     public static void main(String[] args) {
         int num = 10;
