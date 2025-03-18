@@ -18,6 +18,19 @@ public class MatrixMultiplication {
         int[][] result = new int[rows1][cols2];
 
         // Input first matrix
-    
+        System.out.println("Enter elements of first matrix:");
+        for (int i = 0; i < rows1; i++) {
+            for (int j = 0; j < cols1; j++) {
+                matrix1[i][j] = sc.nextInt();
+            }
+        }
+
+        // Input second matrix
+        System.out.println("Enter elements of second matrix:");
+        for (int i = 0; i < cols1; i++) {
+            for (int j = 0; j < cols2; j++) {
+                matrix2[i][j] = sc.nextInt();
+            }
+        }
 
       
