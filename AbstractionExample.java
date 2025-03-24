@@ -23,3 +23,19 @@ abstract class Animal {
     }
 }
 
+// Concrete class extending abstract class
+class Dog extends Animal {
+    // Implementing the abstract method
+    @Override
+    public void makeSound() {
+        System.out.println("Bark bark!");
+    }
+}
+
+class Cat extends Animal {
+    @Override
+    public void makeSound() {
+        System.out.println("Meow!");
+    }
+}
+
