@@ -21,10 +21,10 @@ public class InheritanceExample {
         Dog myDog = new Dog();
         
         // Methods inherited from Animal
-        myDog.eat();    // Output: This animal eats food
-        myDog.sleep();   // Output: This animal sleeps
+        myDog.eat();    
+        myDog.sleep();   
         
-        // Method from Dog class
-        myDog.bark();    // Output: The dog barks
+        
+        myDog.bark();    
     }
 }
