@@ -44,4 +44,35 @@ class Student {
         return grade;
     }
 
+    // Setter method for grade
+    public void setGrade(String grade) {
+        this.grade = grade;
+    }
 
+    // Display student details
+    public void displayInfo() {
+        System.out.println("Student Name: " + name);
+        System.out.println("Age: " + age);
+        System.out.println("Grade: " + grade);
+    }
+}
+
+// Main class
+public class EncapsulationExample {
+    public static void main(String[] args) {
+        // Creating a student object
+        Student student1 = new Student("Sameer", 21, "A");
+
+        // Accessing data through getter methods
+        System.out.println("Student Name: " + student1.getName());
+        System.out.println("Age: " + student1.getAge());
+        System.out.println("Grade: " + student1.getGrade());
+
+        // Modifying data using setter methods
+        student1.setAge(21);
+        student1.setGrade("A+");
+
+        // Display updated information
+        student1.displayInfo();
+    }
+}
