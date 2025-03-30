@@ -38,3 +38,19 @@ class BankAccount {
         }
     }
 }
+
+// Main class
+public class Encapsulation{
+    public static void main(String[] args) {
+        BankAccount myAccount = new BankAccount("12345", 5000);
+
+        // Accessing data using methods
+        System.out.println("Account Number: " + myAccount.getAccountNumber());
+        System.out.println("Current Balance: $" + myAccount.getBalance());
+
+        // Modifying balance using methods
+        myAccount.deposit(1500);
+        myAccount.withdraw(2000);
+        System.out.println("Updated Balance: $" + myAccount.getBalance());
+    }
+}
