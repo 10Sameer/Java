@@ -14,3 +14,23 @@ public class ColorChangingButton extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new FlowLayout());
 
+        // Initialize button
+        button = new JButton("Click me to change color!");
+        button.setBackground(colors[colorIndex]);
+
+        // Add action listener
+        button.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                colorIndex = (colorIndex + 1) % colors.length;
+                button.setBackground(colors[colorIndex]);
+            }
+        });
+
+        add(button);
+        setVisible(true);
+    }
+
+    public static void main(String[] args) {
+        new ColorChangingButton();
+    }
+}
