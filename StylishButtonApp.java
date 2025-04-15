@@ -21,4 +21,12 @@ public class StylishButtonApp extends JFrame {
 
         random = new Random();
 
-    
+        button = new JButton(messages[0]);
+        button.setFont(new Font("Arial", Font.BOLD, 18));
+        button.setForeground(Color.WHITE);
+        button.setBackground(new Color(70, 130, 180)); // Steel blue
+        button.setFocusPainted(false);
+        button.setBorder(BorderFactory.createLineBorder(Color.DARK_GRAY, 2));
+        button.setPreferredSize(new Dimension(200, 50));
+
+      
