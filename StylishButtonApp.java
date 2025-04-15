@@ -29,4 +29,26 @@ public class StylishButtonApp extends JFrame {
         button.setBorder(BorderFactory.createLineBorder(Color.DARK_GRAY, 2));
         button.setPreferredSize(new Dimension(200, 50));
 
-      
+        button.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                // Cycle message
+                clickCount = (clickCount + 1) % messages.length;
+                button.setText(messages[clickCount]);
+
+                // Change background to a random color
+                int r = random.nextInt(256);
+                int g = random.nextInt(256);
+                int b = random.nextInt(256);
+                getContentPane().setBackground(new Color(r, g, b));
+            }
+        });
+
+        add(button); // Add button to the center
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            new StylishButtonApp().setVisible(true);
+        });
+    }
+}
