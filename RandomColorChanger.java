@@ -25,4 +25,23 @@ public class RandomColorChanger extends JFrame {
         add(panel);
 
         // Add ActionListener to button
-       
+        button.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                // Generate random RGB values
+                int r = random.nextInt(256);
+                int g = random.nextInt(256);
+                int b = random.nextInt(256);
+                Color randomColor = new Color(r, g, b);
+
+                // Set background color
+                panel.setBackground(randomColor);
+            }
+        });
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            new RandomColorChanger().setVisible(true);
+        });
+    }
+}
