@@ -34,4 +34,22 @@ public class WhileExample {
                     result = a - b;
                     System.out.println("Result: " + result);
                     break;
-              
+                case 3:
+                    System.out.print("Enter two numbers: ");
+                    a = scanner.nextDouble();
+                    b = scanner.nextDouble();
+                    result = a * b;
+                    System.out.println("Result: " + result);
+                    break;
+                case 4:
+                    System.out.print("Enter two numbers: ");
+                    a = scanner.nextDouble();
+                    b = scanner.nextDouble();
+                    if (b != 0) {
+                        result = a / b;
+                        System.out.println("Result: " + result);
+                    } else {
+                        System.out.println("Error: Division by zero is not allowed.");
+                    }
+                    break;
+            
