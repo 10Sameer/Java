@@ -52,4 +52,16 @@ public class WhileExample {
                         System.out.println("Error: Division by zero is not allowed.");
                     }
                     break;
-            
+                case 5:
+                    System.out.println("Exiting program...");
+                    break;
+                default:
+                    System.out.println("Invalid choice. Please choose 1-5.");
+            }
+
+            System.out.println(); // Add a blank line for spacing
+        }
+
+        scanner.close();
+    }
+}
