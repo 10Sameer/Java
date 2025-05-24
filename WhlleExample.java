@@ -16,4 +16,22 @@ public class WhileExample {
             System.out.println("5. Exit");
             System.out.print("Enter your choice (1-5): ");
 
-           
+            choice = scanner.nextInt();
+            double a, b, result;
+
+            switch (choice) {
+                case 1:
+                    System.out.print("Enter two numbers: ");
+                    a = scanner.nextDouble();
+                    b = scanner.nextDouble();
+                    result = a + b;
+                    System.out.println("Result: " + result);
+                    break;
+                case 2:
+                    System.out.print("Enter two numbers: ");
+                    a = scanner.nextDouble();
+                    b = scanner.nextDouble();
+                    result = a - b;
+                    System.out.println("Result: " + result);
+                    break;
+              
