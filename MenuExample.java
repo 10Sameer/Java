@@ -13,7 +13,16 @@ public class MenuExample {
             System.out.print("Enter your choice: ");
             choice = input.nextInt();
 
-         
-        
+            if (choice == 1) {
+                System.out.println("Hello!");
+            } else if (choice == 2) {
+                System.out.println("Bye!");
+            } else if (choice != 3) {
+                System.out.println("Invalid choice.");
+            }
+
+        } while (choice != 3);
+
+        System.out.println("Program ended.");
     }
 }
