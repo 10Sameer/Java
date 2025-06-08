@@ -50,3 +50,27 @@ class UpiPayment implements PaymentGateway {
     }
 }
 
+// Business logic using abstraction
+public class PaymentProcessor {
+    public void processPayment(PaymentGateway gateway, double amount) {
+        gateway.authenticateUser();
+        gateway.makePayment(amount);
+        gateway.generateReceipt();
+    }
+
+    public static void main(String[] args) {
+        PaymentProcessor processor = new PaymentProcessor();
+
+        // Process Credit Card payment
+        PaymentGateway creditCard = new CreditCardPayment();
+        processor.processPayment(creditCard, 250.75);
+
+        // Process PayPal payment
+        PaymentGateway paypal = new PayPalPayment();
+        processor.processPayment(paypal, 100.00);
+
+        // Process UPI payment
+        PaymentGateway upi = new UpiPayment();
+        processor.processPayment(upi, 50.25);
+    }
+}
