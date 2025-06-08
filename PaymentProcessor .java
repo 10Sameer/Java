@@ -35,3 +35,18 @@ class PayPalPayment implements PaymentGateway {
     }
 }
 
+// Implementation 3: UPI Payment
+class UpiPayment implements PaymentGateway {
+    public void authenticateUser() {
+        System.out.println("Authenticating using UPI PIN...");
+    }
+
+    public void makePayment(double amount) {
+        System.out.println("Processing UPI payment of $" + amount);
+    }
+
+    public void generateReceipt() {
+        System.out.println("Receipt: UPI payment successful.\n");
+    }
+}
+
