@@ -20,3 +20,10 @@ class AmphibiousVehicle implements Flyable, Sailable {
     public void fly() {
         System.out.println("Flying in the sky.");
     }
+
+    @Override
+    public void sail() {
+        System.out.println("Sailing in the ocean.");
+    }
+
+ 
