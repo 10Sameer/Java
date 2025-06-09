@@ -14,3 +14,9 @@ interface Sailable {
     }
 }
 
+// Class implementing both interfaces
+class AmphibiousVehicle implements Flyable, Sailable {
+    @Override
+    public void fly() {
+        System.out.println("Flying in the sky.");
+    }
