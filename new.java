@@ -35,3 +35,12 @@ class AmphibiousVehicle implements Flyable, Sailable {
     }
 }
 
+// Main class to test
+public class Main {
+    public static void main(String[] args) {
+        AmphibiousVehicle av = new AmphibiousVehicle();
+        av.fly();
+        av.sail();
+        av.navigate(); // Custom resolution
+    }
+}
