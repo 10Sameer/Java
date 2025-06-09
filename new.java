@@ -6,3 +6,11 @@ interface Flyable {
     }
 }
 
+interface Sailable {
+    void sail();
+
+    default void navigate() {
+        System.out.println("Navigating in the water.");
+    }
+}
+
