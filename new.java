@@ -26,4 +26,12 @@ class AmphibiousVehicle implements Flyable, Sailable {
         System.out.println("Sailing in the ocean.");
     }
 
- 
+    // Must override navigate() to resolve conflict
+    @Override
+    public void navigate() {
+        System.out.println("Custom navigation for amphibious vehicle.");
+        Flyable.super.navigate(); // Optional: call specific interface version
+        Sailable.super.navigate(); // Optional: call specific interface version
+    }
+}
+
